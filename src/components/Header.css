@@ -1,0 +1,122 @@
+.header {
+  background: url('/ocean-bg.jpg') center/cover no-repeat;
+  position: relative;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 34, 67, 0.55); /* dark blue overlay */
+  z-index: 0;
+}
+
+.header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  max-width: 600px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.phone-number {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 44px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.phone-number:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.phone-number:active {
+  transform: translateY(0);
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 15px;
+  }
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  .header p {
+    font-size: 1.1rem;
+  }
+  .phone-number {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .header {
+    padding: 25px 10px;
+    min-height: 80vh;
+  }
+  .header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+  .header p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .phone-number {
+    font-size: 1.1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Small mobile styles */
+@media (max-width: 360px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  .header p {
+    font-size: 0.9rem;
+  }
+  .phone-number {
+    font-size: 1rem;
+  }
+} 
