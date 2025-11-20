@@ -42,36 +42,6 @@
   max-width: 500px;
 }
 
-.phone-number {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 30px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  min-height: 44px;
-  min-width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.phone-number:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.phone-number:active {
-  transform: translateY(0);
-}
-
 /* Tablet styles */
 @media (max-width: 768px) {
   .header {
@@ -82,9 +52,6 @@
   }
   .header p {
     font-size: 1.1rem;
-  }
-  .phone-number {
-    font-size: 1.2rem;
   }
 }
 
@@ -102,10 +69,6 @@
     font-size: 1rem;
     margin-bottom: 8px;
   }
-  .phone-number {
-    font-size: 1.1rem;
-    padding: 8px 16px;
-  }
 }
 
 /* Small mobile styles */
@@ -115,8 +78,5 @@
   }
   .header p {
     font-size: 0.9rem;
-  }
-  .phone-number {
-    font-size: 1rem;
   }
 } 
